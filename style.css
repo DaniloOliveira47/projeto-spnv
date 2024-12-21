@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --verdeaqua: #97FEED;
+    --verdemusgoclaro: #35A29F;
+    --verdemusgoescuro: #0B666A;
+    --azulescuro: #071952;
+    --largura: 1024px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+img {
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    grid-column: span 2;
+    background-color: #0077b6;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-self: center; 
+    color: black;
+}
+h2 {
+    font-size: 18px;
+}
+.linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listaArtistas {
+    margin-top: 30px;
+}
+
+.cabecalho {
+    background-color: #0077b6;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 32px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.35);
+    margin-bottom: 50px;
+}
+
+.cabecalho h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid var(--verdeaqua);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #f8f8f8, #e0e0e0);
+    margin-top: 100px;
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1.5px solid var #0077b6;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: var(--verdemusgoescuro);
+    outline: none;
+    transform: scale(1.02);
+}
+
+button[type="submit"] {
+    grid-column: span 2;
+    background-color: #0077b6;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-self: center; 
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-top: 1px solid #333;
+    margin-top: 70px;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 45px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #aaa;
+    margin-left: 18px;
+  }
+
+  .footer-columns {
+    display: flex;
+    gap: 40px;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .footer-column a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+
+  .footer-column a:hover {
+    color: #fff;
+  }
+
+.topicos{
+color: white ;
+}

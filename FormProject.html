@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <title>Project</title>
+</head>
+ 
+<body>
+<header class="cabecalho">
+    <div class="linha">
+    <h2> SPNV GRAVADORA INTELIGENTE</h2>
+    <a href="">Cadastrar artista</a>
+    <a href="">Visualizar artistas</a>
+    </div>
+    </header>
+    <div class="container">
+        <h1>Adicionar novo trabalho Musical</h1>
+        <form>
+            
+            <div id="form" class="form-group">
+                <label for="project-name">Nome do Projeto:</label>
+                <input type="text" id="project-name" name="project-name" required placeholder="informe o nome do Projeto">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="music-genre">Gênero Musical:</label>
+                <select id="music-genre" name="music-genre" required>
+                    <option value="">Selecione o gênero</option>
+                    <option value="Trap">Trap</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Eletrônica">Eletrônica</option>
+                    <option value="MPB">MPB</option>
+                    <option value="Reggae">Reggae</option>
+                    <option value="R&B">R&B</option>
+                    <option value="Sertanejo">Sertanejo</option>
+                </select>
+    
+            </div>
+
+            <div class="form-group">
+                <label for="track-count">Número de faixas:</label>
+                <input type="number" id="track-count" name="track-count" required placeholder="Número de faixas do Projeto">
+            </div>
+
+            
+            <label for="artists">Artistas no Projeto:</label>
+            <textarea id="artists" name="artists" rows="4" required placeholder="Digite os nomes dos artistas separados por vírgula"></textarea>
+
+
+            <div class="form-group">
+                <label for="img">Imagem:</label>
+                <textarea id="img" name="img" placeholder="Cole a url da imagem do artista" required></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" id="submitBtn">Cadastrar Projeto</button>
+            </div>
+        </form>
+
+        <div id="listProjects"></div>
+    </div>
+
+    <br>
+<footer>
+  <div class="logo-section">
+    <div class="logo">SPNV</div>
+    <div class="copyright">© 2024</div>
+  </div>
+  
+  <div class="footer-columns">
+    <div class="footer-column">
+      <h4 class="topicos">Section</h4>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">FAQs</a>
+      <a href="#">About</a>
+    </div>
+    <div class="footer-column">
+      <h4 class="topicos">Section</h4>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">FAQs</a>
+      <a href="#">About</a>
+    </div>
+    <div class="footer-column">
+      <h4 class="topicos">Section</h4>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">FAQs</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
